@@ -4,98 +4,100 @@
     margin: 0;
     padding: 0;
     font-family: 'Barlow', sans-serif;
-}
-
-h2 {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 img {
     width: 100%;
 }
 
-/* GALLERY SECTION */
-
-.container {
+main {
     margin: 8px;
     display: flex;
     justify-content: center;
 }
 
-.show-gallery {
-    width: 1400px;
+/* GALLERY SECTION */
+
+section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .show {
-    width: 190px;
     padding: 8px;
     margin-bottom: 15px;
     flex-grow: 1;
+    cursor: pointer;
 }
 
 .show h2 {
     margin-top: 10px;
 }
 
-.show-title {
-    transition: .5s ease;
-}
 
 .show:hover {
     color: #1882f8;
+    transition: .3s ease;
 }
 
+/* MOBILE FIRST DESIGN */
 
-/* RESPONSIVE MEDIA QUERIES */
-
-/* LAPTOP AND LANDSCAPE TABLET */
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 575px) {    
     h2 {
-        font-size: 16px;
+        font-size: 1.185em;
     }
-
-    .show-gallery {
-        width: 1000px;
+    section {
+        width: 100%;        
+    }
+    .show {
+        width: 40%;
     }
 }
 
-/* TABLET AND LANDSCAPE MOBILE */
-@media only screen and (max-width: 768px) {
-    .show-gallery {
-        width: 800px;
+
+@media only screen and (min-width: 576px) {
+    h2 {
+        font-size: 1.135em;
+    }
+    section {
+        width: 100%;
     }
     .show {
-        width: 175px;
+        width: 25%;
     }
 }
 
-/* TABLET AND LANDSCAPE MOBILE */
-@media only screen and (max-width: 590px) {
-    .show-gallery {
-        width: 700px;
+
+@media only screen and (min-width: 768px) {
+    h2 {
+        font-size: 1.125em;
+    }
+        section {
+        width: 100%;
     }
     .show {
-        width: 140px;
+        width: 20%;
     }
 }
 
-/* MOBILE */
-@media only screen and (max-width: 480px) {
-    .show-gallery {
-        width: 600px;
-        flex-shrink: 2;
+
+@media only screen and (min-width: 992px) {
+    section {
+        width: 100%;
     }
     .show {
-        width: 140px;
+        width: 15%;
     }
 }
 
-/* MOBILE */
-@media only screen and (max-width: 330px) {
+
+@media only screen and (min-width: 1400px) {
+    section {
+        width: 78%;
+    }
     .show {
-        width: 110px;
+        width: 14%;
     }
 }
