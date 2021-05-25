@@ -63,7 +63,19 @@ const shows = [
     },
 ];
 
-// HTTP DATA REQUEST REPLICATION TEST
+// HTTP GET REQUEST REPLICATION TEST USING JQUERY
+
+// $(document).ready(() => {
+
+//     $.get("https://rickandmortyapi.com/api/character/?page=19", response => {
+
+//         console.log(response);
+//         response.results.forEach(character => {
+//              console.log(character)
+//         })
+//     })
+
+// })
 
 // const response = {
 //     data: [
@@ -84,6 +96,8 @@ const shows = [
 //         },
 //     ],
 // }
+
+// const shows = response.data
 
 const showSection = document.getElementById('shows-gallery');
 
